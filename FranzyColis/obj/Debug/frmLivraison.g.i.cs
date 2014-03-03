@@ -39,7 +39,7 @@ namespace FranzyColis {
         
         internal System.Windows.Controls.Grid LayoutRoot;
         
-        internal Microsoft.Phone.Maps.Controls.Map MyMap;
+         public volatile Microsoft.Phone.Maps.Controls.Map MyMap;
         
         internal Microsoft.Phone.Controls.LongListSelector RouteLLS;
         

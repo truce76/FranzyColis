@@ -9,14 +9,16 @@ using Franzy_Colis.Classe;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Windows.Devices.Geolocation;
-//using System.Device.Location;
+using System.Device.Location;
+using System.Device.Location;
+using Microsoft.Phone.Maps.Controls;
 
 namespace FranzyColis
 {
     public partial class frmLivraison : PhoneApplicationPage
     {
        Geolocator gl = new Geolocator();
-       GPS map;
+       GPS map; 
         public frmLivraison()
         {
             InitializeComponent();
@@ -33,8 +35,8 @@ namespace FranzyColis
             map = new GPS(MyMap, RouteLLS);
             gl.MovementThreshold = 20;
             gl.DesiredAccuracyInMeters = 5;
-            map.GetCoordinates();
-            gl.PositionChanged += gl_PositionChanged;
+            map.GetCoordinates(new GeoCoordinate(49.53525, 0.186292));
+            gl.PositionChanged+=gl_PositionChanged;
         }
 
         void gl_PositionChanged(Geolocator sender, PositionChangedEventArgs args)
@@ -43,7 +45,7 @@ namespace FranzyColis
             lati = args.Position.Coordinate.Latitude;
             longi = args.Position.Coordinate.Longitude;
             var truc = args.Position.Coordinate;
-            MyMap.SetView(new System.Device.Location.GeoCoordinate(lati, longi), 1);
+            map.GetCoordinates(new GeoCoordinate(49.53525, 0.186292)); 
             //MyMap.Center = truc;
             
         } 

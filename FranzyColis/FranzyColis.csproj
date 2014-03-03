@@ -94,6 +94,8 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Classe\GPS.cs" />
+    <Compile Include="Classe\ParseXML.cs" />
+    <Compile Include="Classe\strucColis.cs" />
     <Compile Include="frmLivraison.xaml.cs">
       <DependentUpon>frmLivraison.xaml</DependentUpon>
     </Compile>

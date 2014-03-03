@@ -32,7 +32,7 @@ namespace Franzy_Colis.Classe
         /// </summary>
         List<GeoCoordinate> MyCoordinates = new List<GeoCoordinate>(); 
         RouteQuery MyQuery = null;
-        GeocodeQuery Mygeocodequery = null;
+    volatile GeocodeQuery Mygeocodequery = null;
         Geoposition MyGeoPosition = null;
        public bool loaded = true;
         //BingKey, utiliser pour pouvoir obtenir les points sur la map de Bing (Clé Bing obtenue par RomainG)
@@ -120,7 +120,7 @@ namespace Franzy_Colis.Classe
 
      
 
-        public async void GetCoordinates()
+        public async void GetCoordinates(GeoCoordinate destination)
         {
             // Get the phone's current location.
             Geolocator MyGeolocator = new Geolocator();
@@ -135,15 +135,15 @@ namespace Franzy_Colis.Classe
 
 
                 Mygeocodequery = new GeocodeQuery();
-                Mygeocodequery.SearchTerm = (49.53525).ToString().Replace(",", ".") + "," + (0.186292).ToString().Replace(",", ".");
-                Mygeocodequery.GeoCoordinate = new GeoCoordinate(49.53525, 0.186292);
+                Mygeocodequery.SearchTerm = (destination.Latitude).ToString().Replace(",", ".") + "," + (destination.Longitude).ToString().Replace(",", ".");
+                Mygeocodequery.GeoCoordinate = destination;
 
 
                 Mygeocodequery.QueryCompleted += Mygeocodequery_QueryCompleted;
                 Mygeocodequery.QueryAsync();
 
             }
-            catch (UnauthorizedAccessException)
+            catch (UnauthorizedAccessException ex)
             {
                 MessageBox.Show("Location is disabled in phone settings or capabilities are not checked.");
             }
@@ -184,7 +184,7 @@ namespace Franzy_Colis.Classe
                     }
                 } 
                 RouteLLS.ItemsSource = RouteList;
-                
+               
                 loaded = false;
                 MyQuery.Dispose();
                 
