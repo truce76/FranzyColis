@@ -43,7 +43,7 @@ namespace FranzyColis
             lati = args.Position.Coordinate.Latitude;
             longi = args.Position.Coordinate.Longitude;
             var truc = args.Position.Coordinate;
-            
+            MyMap.SetView(new System.Device.Location.GeoCoordinate(lati, longi), 1);
             //MyMap.Center = truc;
             
         } 
