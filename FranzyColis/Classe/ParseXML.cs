@@ -26,7 +26,7 @@ namespace Franzy_Colis.Objet.ParseXML
         List<ColisRecu> lcr = new List<ColisRecu>();
         WebClient webClient = new WebClient();
 
-        public ParseXML(int i, string chemin)
+        public ParseXML(string chemin)
         {
             webClient.DownloadStringAsync(new Uri(chemin));
 

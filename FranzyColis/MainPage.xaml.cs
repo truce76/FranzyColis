@@ -10,6 +10,7 @@ using Microsoft.Phone.Shell;
 using FranzyColis.Resources;
 using System.Xml.Linq;
 
+using Franzy_Colis.Objet.ParseXML;
 namespace FranzyColis
 {
     public partial class MainPage : PhoneApplicationPage
@@ -60,6 +61,12 @@ namespace FranzyColis
              //    }
 
              //};
+
+            //http://vds43.monespace.net/franzycolis/web/app_dev.php/mobile/liste/8e883b0e01ff2b81d964
+
+             ParseXML px = new ParseXML("http://vds43.monespace.net/franzycolis/web/app_dev.php/mobile/liste/8e883b0e01ff2b81d964");
+
+
          }
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
