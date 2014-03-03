@@ -41,13 +41,16 @@ namespace FranzyColis
 
         void gl_PositionChanged(Geolocator sender, PositionChangedEventArgs args)
         {
-            double lati, longi;
-            lati = args.Position.Coordinate.Latitude;
-            longi = args.Position.Coordinate.Longitude;
-            var truc = args.Position.Coordinate;
-            map.GetCoordinates(new GeoCoordinate(49.53525, 0.186292)); 
-            //MyMap.Center = truc;
-            
+            Dispatcher.BeginInvoke(() =>
+{
+
+    double lati, longi;
+    lati = args.Position.Coordinate.Latitude;
+    longi = args.Position.Coordinate.Longitude;
+    var truc = args.Position.Coordinate;
+    map.GetCoordinates(new GeoCoordinate(49.53525, 0.186292));
+    //MyMap.Center = truc;
+});
         } 
     }
 }

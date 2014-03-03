@@ -16,6 +16,7 @@ using Windows.Devices.Geolocation;
 using System.Collections.Generic;
 using Microsoft.Phone.Controls;
 using System.IO.IsolatedStorage;
+using System.Windows.Threading;
 
 namespace Franzy_Colis.Classe
 {
@@ -132,9 +133,10 @@ namespace Franzy_Colis.Classe
 
                 MyGeoPosition = await MyGeolocator.GetGeopositionAsync(TimeSpan.FromMinutes(1), TimeSpan.FromSeconds(10));
                 MyCoordinates.Add(new GeoCoordinate(MyGeoPosition.Coordinate.Latitude, MyGeoPosition.Coordinate.Longitude));
-
-
-                Mygeocodequery = new GeocodeQuery();
+              
+                        Mygeocodequery = new GeocodeQuery();
+               
+            
                 Mygeocodequery.SearchTerm = (destination.Latitude).ToString().Replace(",", ".") + "," + (destination.Longitude).ToString().Replace(",", ".");
                 Mygeocodequery.GeoCoordinate = destination;
 
@@ -184,7 +186,7 @@ namespace Franzy_Colis.Classe
                     }
                 } 
                 RouteLLS.ItemsSource = RouteList;
-               
+                mapGPS.SetView(MyRoute.BoundingBox);
                 loaded = false;
                 MyQuery.Dispose();
                 
