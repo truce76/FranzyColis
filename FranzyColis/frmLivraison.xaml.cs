@@ -17,8 +17,8 @@ namespace FranzyColis
 {
     public partial class frmLivraison : PhoneApplicationPage
     {
-       Geolocator gl = new Geolocator();
-       GPS map; 
+        Geolocator gl = new Geolocator();
+        GPS map;
         public frmLivraison()
         {
             InitializeComponent();
@@ -31,26 +31,20 @@ namespace FranzyColis
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
-            
+
             map = new GPS(MyMap, RouteLLS);
             gl.MovementThreshold = 20;
-            gl.DesiredAccuracyInMeters = 5;
+            gl.DesiredAccuracy = PositionAccuracy.High;
             map.GetCoordinates(new GeoCoordinate(49.53525, 0.186292));
-            gl.PositionChanged+=gl_PositionChanged;
+            gl.PositionChanged += gl_PositionChanged;
         }
 
         void gl_PositionChanged(Geolocator sender, PositionChangedEventArgs args)
         {
             Dispatcher.BeginInvoke(() =>
-{
-
-    double lati, longi;
-    lati = args.Position.Coordinate.Latitude;
-    longi = args.Position.Coordinate.Longitude;
-    var truc = args.Position.Coordinate;
-    map.GetCoordinates(new GeoCoordinate(49.53525, 0.186292));
-    //MyMap.Center = truc;
-});
-        } 
+            {
+                 map.GetCoordinates(new GeoCoordinate(49.53525, 0.186292));
+            });
+        }
     }
 }

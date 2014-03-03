@@ -26,7 +26,7 @@ namespace FranzyColis
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-             NavigationService.Navigate(new Uri("/frmLivraison.xaml", UriKind.Relative));
+             NavigationService.Navigate(new Uri("/Scanner.xaml", UriKind.Relative));
              //WebClient webClient = new WebClient();
              //webClient.DownloadStringAsync(new Uri("http://192.168.1.14/symfony/web/app_dev.php/mobile/identification/coursier/" + TxtBoxLogin.Text + "/" + PassBox.Password));
              //http://vds43.monespace.net/franzycolis/web/app_dev.php/mobile/identification/coursier/bcatelain/azerty
@@ -64,8 +64,7 @@ namespace FranzyColis
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
-
-            NavigationService.Navigate(new Uri("/frmLivraison.xaml", UriKind.Relative));
+             
         }
         
             // Exemple de code pour la conception d'une ApplicationBar localisée
