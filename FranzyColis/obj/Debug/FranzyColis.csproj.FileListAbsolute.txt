@@ -21,3 +21,25 @@ c:\users\guillaume\documents\visual studio 2012\Projects\FranzyColis\FranzyColis
 c:\users\guillaume\documents\visual studio 2012\Projects\FranzyColis\FranzyColis\obj\Debug\FranzyColis.csprojResolveAssemblyReference.cache
 c:\users\guillaume\documents\visual studio 2012\Projects\FranzyColis\FranzyColis\obj\Debug\Scanner.g.cs
 c:\users\guillaume\documents\visual studio 2012\Projects\FranzyColis\FranzyColis\obj\Debug\frmLivraison.g.cs
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\Bin\Debug\FranzyColis.dll
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\Bin\Debug\FranzyColis.pdb
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\Bin\Debug\AppManifest.xaml
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\Bin\Debug\FranzyColis_Debug_AnyCPU.xap
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\Bin\Debug\Silverlight_ZXing_Core.pdb
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\obj\Debug\FranzyColis.csprojResolveAssemblyReference.cache
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\obj\Debug\App.g.cs
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\obj\Debug\frmLivraison.g.cs
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\obj\Debug\MainPage.g.cs
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\obj\Debug\Scanner.g.cs
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\obj\Debug\FranzyColis.g.resources
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\obj\Debug\FranzyColis.Resources.AppResources.resources
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\obj\Debug\FranzyColis.csproj.GenerateResource.Cache
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\obj\Debug\FranzyColis.dll
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\obj\Debug\FranzyColis.pdb
+C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\obj\Debug\XapCacheFile.xml

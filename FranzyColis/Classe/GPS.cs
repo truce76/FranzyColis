@@ -47,18 +47,19 @@ namespace Franzy_Colis.Classe
         {
             this.mapGPS = mapGPS;
             this.RouteLLS = LLS;
+        }
 
               
 
-            GeoCoordinateWatcher watcher = new GeoCoordinateWatcher(GeoPositionAccuracy.Default)
-            {
-                MovementThreshold = 20
-            };
+            //GeoCoordinateWatcher watcher = new GeoCoordinateWatcher(GeoPositionAccuracy.Default)
+            //{
+            //    MovementThreshold = 20
+            //};
 
-            watcher.PositionChanged += this.watcher_PositionChanged;
-            watcher.StatusChanged += this.watcher_StatusChanged;
-            watcher.Start();
-        }
+            //watcher.PositionChanged += this.watcher_PositionChanged;
+            //watcher.StatusChanged += this.watcher_StatusChanged;
+            //watcher.Start();
+            //}
 
         /// <summary>
         /// Lorsque le statut de la Géolocalisation change
@@ -186,6 +187,9 @@ namespace Franzy_Colis.Classe
                 
                 loaded = false;
                 MyQuery.Dispose();
+                
+
+
             }
         }
     }

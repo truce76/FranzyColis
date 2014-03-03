@@ -29,7 +29,7 @@ namespace FranzyColis
              NavigationService.Navigate(new Uri("/frmLivraison.xaml", UriKind.Relative));
              //WebClient webClient = new WebClient();
              //webClient.DownloadStringAsync(new Uri("http://192.168.1.14/symfony/web/app_dev.php/mobile/identification/coursier/" + TxtBoxLogin.Text + "/" + PassBox.Password));
-
+             //http://vds43.monespace.net/franzycolis/web/app_dev.php/mobile/identification/coursier/bcatelain/azerty
              //webClient.DownloadStringCompleted += (s, a) =>
              //{
              //    try
