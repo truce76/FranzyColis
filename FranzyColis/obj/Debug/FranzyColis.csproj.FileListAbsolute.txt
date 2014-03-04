@@ -31,7 +31,6 @@ C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\Bin\Debug\FranzyColis.dll
 C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\Bin\Debug\FranzyColis.pdb
 C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\Bin\Debug\AppManifest.xaml
 C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\Bin\Debug\FranzyColis_Debug_AnyCPU.xap
-C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\Bin\Debug\Silverlight_ZXing_Core.pdb
 C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\obj\Debug\FranzyColis.csprojResolveAssemblyReference.cache
 C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\obj\Debug\App.g.cs
 C:\Users\CCI\Documents\GitHub\FranzyColis\FranzyColis\obj\Debug\frmLivraison.g.cs

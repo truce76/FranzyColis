@@ -14,6 +14,7 @@ using com.google.zxing.qrcode;
 using System.Collections.ObjectModel;
 using System.Windows.Threading;
 
+
 namespace FranzyColis
 {
     public partial class Scanner : PhoneApplicationPage
@@ -79,6 +80,11 @@ namespace FranzyColis
         {
             if (!_matches.Contains(text))
                 _matches.Add(text);  
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

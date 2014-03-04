@@ -32,6 +32,6 @@
             </Rectangle.Fill>
         </Rectangle>
         <ListBox Margin="10,494,10,106" x:Name="_matchesList" FontSize="30" FontWeight="ExtraBold" />
-        <Button Content="Terminé" HorizontalAlignment="Left" Margin="121,662,0,0" VerticalAlignment="Top" Height="106" Width="199"/>
+        <Button Content="Terminé" HorizontalAlignment="Left" Margin="121,662,0,0" VerticalAlignment="Top" Height="106" Width="199" Click="Button_Click_1"/>
     </Grid>
 </phone:PhoneApplicationPage>

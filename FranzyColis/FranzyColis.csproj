@@ -96,6 +96,9 @@
     <Compile Include="Classe\GPS.cs" />
     <Compile Include="Classe\ParseXML.cs" />
     <Compile Include="Classe\strucColis.cs" />
+    <Compile Include="frmListeColis.xaml.cs">
+      <DependentUpon>frmListeColis.xaml</DependentUpon>
+    </Compile>
     <Compile Include="frmLivraison.xaml.cs">
       <DependentUpon>frmLivraison.xaml</DependentUpon>
     </Compile>
@@ -119,6 +122,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="frmListeColis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="frmLivraison.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

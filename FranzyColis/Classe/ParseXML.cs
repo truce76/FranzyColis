@@ -23,7 +23,7 @@ namespace Franzy_Colis.Objet.ParseXML
     class ParseXML
     {
         XDocument xdoc;
-        List<ColisRecu> lcr = new List<ColisRecu>();
+        public List<ColisRecu> lcr = new List<ColisRecu>();
         WebClient webClient = new WebClient();
 
         public ParseXML(string chemin)
